@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="/logo.png" alt="Logo da cafeteria" />
+      </a>
+
+      <nav class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produtos</a>
+        <a href="#review">Avaliações</a>
+        <a href="#contact">Contato</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Pesquise aqui ..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="/cart-item-1.png" alt="" />
+          <div class="content">
+            <h3>Item do carrinho 1</h3>
+            <div class="price">$15.99</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="/cart-item-2.png" alt="" />
+          <div class="content">
+            <h3>Item do carrinho 2</h3>
+            <div class="price">$14.89</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="cart-item-3.png" alt="" />
+          <div class="content">
+            <h3>Item do carrinho 3</h3>
+            <div class="price">$13.69</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="cart-item-4.png" alt="" />
+          <div class="content">
+            <h3>Item do carrinho 4</h3>
+            <div class="price">$12.59</div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">Fazer checkout</a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Café fresco pela manhã</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+          voluptates sint assumenda itaque ut esse harum, expedita eligendi
+          minus neque distinctio animi accusantium similique dolorem mollitia
+          rerum obcaecati nulla placeat?
+        </p>
+        <a href="#" class="btn">Peça já o seu café!</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading"><span>Sobre</span> nós</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="about-img.jpeg" alt="Xícara de café" />
+        </div>
+
+        <div class="content">
+          <h3>O que torna nosso café especial?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            corrupti odit doloribus! Quos, cupiditate asperiores. Iusto esse
+            natus incidunt provident rerum quis perspiciatis cumque, ratione
+            delectus reprehenderit porro ab ducimus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum
+            aspernatur, maiores tempora non error accusantium ducimus cum
+            perferendis itaque!
+          </p>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h1 class="heading"><span>Nosso</span> menu</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="menu-1.png" alt="Item do menu" />
+          <h3>Cappuccino</h3>
+          <div class="price">$19.99 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="menu-2.png" alt="Item do menu" />
+          <h3>Cafe au Lait</h3>
+          <div class="price">$18.50 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="menu-3.png" alt="Item do menu" />
+          <h3>Expresso</h3>
+          <div class="price">$17.99 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="menu-4.png" alt="Item do menu" />
+          <h3>Iced coffee</h3>
+          <div class="price">$16.50 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="menu-5.png" alt="Item do menu" />
+          <h3>Cafe Latte</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="menu-6.png" alt="Item do menu" />
+          <h3>Mocha</h3>
+          <div class="price">$14.85 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading"><span>Nosso</span> produtos</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="product-1.png" alt="Produtos" />
+          </div>
+          <div class="content">
+            <h3>Nicaragua coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$25.99 <span>$30.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="product-2.png" alt="Produtos" />
+          </div>
+          <div class="content">
+            <h3>Columbia coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$23.00 <span>$27.85</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="product-3.png" alt="Produtos" />
+          </div>
+          <div class="content">
+            <h3>Peru coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading"><span>Avaliação</span> de clientes</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="quote-img.png" alt="" class="quote" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            distinctio vitae nobis exercitationem repudiandae ut recusandae
+            saepe provident nulla, asperiores reiciendis. Doloribus sed deserunt
+            quo nobis facere iure? Quam, quod.
+          </p>
+          <img src="pic-1.png" class="user" alt="" />
+          <h3>João Santos</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="quote-img.png" alt="" class="quote" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            distinctio vitae nobis exercitationem repudiandae ut recusandae
+            saepe provident nulla, asperiores reiciendis. Doloribus sed deserunt
+            quo nobis facere iure? Quam, quod.
+          </p>
+          <img src="pic-2.png" class="user" alt="" />
+          <h3>Helena Soares</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="quote-img.png" alt="" class="quote" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            distinctio vitae nobis exercitationem repudiandae ut recusandae
+            saepe provident nulla, asperiores reiciendis. Doloribus sed deserunt
+            quo nobis facere iure? Quam, quod.
+          </p>
+          <img src="pic-3.png" class="user" alt="" />
+          <h3>Jorge Ferreira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Nosso</span> contato</h1>
+
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6572641350926!2d-34.88814548468972!3d-8.03422768244455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19cf6324bd6f%3A0x2ee9860b4b9f31e!2zQ29udMOpbSBDYWbDqQ!5e0!3m2!1sen!2sbr!4v1658611259244!5m2!1sen!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="">
+          <h3>Entre em contato</h3>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="Digite seu Nome" />
+          </div>
+
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="Digite seu email" />
+          </div>
+
+          <div class="inputbox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="Digite seu número de celular" />
+          </div>
+
+          <input type="submit" value="contact now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>Nossos </span>blogs</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="blog-1.jpeg" alt="" />
+          </div>
+
+          <div class="content">
+            <a href="#" class="title">Faça seu próprio café</a>
+            <span>Feito por Fábio Garcia</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+              ipsum!
+            </p>
+            <a href="#" class="btn">Saiba mais!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-2.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Dicas para cozinhar</a>
+            <span>Feito por Joana Silva</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+              ipsum!
+            </p>
+            <a href="#" class="btn">Saiba mais!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-3.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Benefícios da Cafeína</a>
+            <span>Feito por Pablo Cabral</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+              ipsum!
+            </p>
+            <a href="#" class="btn">Saiba mais!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="share">
+        <a href="#home" class="fab fa-facebook-f"></a>
+        <a href="#home" class="fab fa-twitter"></a>
+        <a
+          href="https://instagram.com/nicolas_oliveira_"
+          target="_blank"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nicolas-oliveira-a92b6917b/"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://github.com/Nicolas99/"
+          target="_blank"
+          class="fab fa-github"
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu </a>
+        <a href="#review">Avaliações</a>
+        <a href="#contact">Contato</a>
+        <a href="#blogs">Blogs</a>
+      </div>
+
+      <div class="credit">Feito por <span>Nicolas Oliveira</span></div>
+    </section>
+    <script src="/index.js"></script>
+  </body>
+</html>
